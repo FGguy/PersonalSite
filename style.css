@@ -1,0 +1,205 @@
+
+.navb {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    height: 54px;
+    animation: navanim 1.5s ease-out;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20%;
+    min-height: 250px;
+    overflow: visible;
+    clip-path: none;
+}
+
+.about div {
+    display: inline-block;
+    max-width: 400px;
+    padding: 30px;
+    animation: profilepic 1.5s ease-out;
+}
+
+.resume{
+    
+    height: fit-content;
+    padding: 20px;
+}
+
+.resume h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 10%;
+    min-height: 54px;
+}
+
+.contact * {
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbarl {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 54px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 5%;
+}
+
+#navbarl li{
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+a:hover ,.active{
+    background-color: #e8dab6;
+}
+
+div, p, h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+ol{
+    list-style: none;
+}
+
+.profilepic {
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+body, html{
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+    margin: 0px;
+    height: 100%;
+    color: #17382d;
+    font-family: 'Montserrat';
+}
+
+a {
+    padding: 10px;
+    border-radius: 12px;
+    color: #17382d;
+}
+
+.main {
+    background-image: linear-gradient(to right,#e8dab6, #eaaf92, #d97578);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation: main 1.5s ease-out;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 20px;
+}
+
+.abouttxt{
+    border-radius: 16px;
+    background-color: rgb(255,255,255,0.4);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+
+
+@media(max-width: 850px) {
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+        height: 20%;
+        min-height: 250px;
+    }
+
+    #navbarl {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 5%;
+    }
+}
+
+@keyframes navanim {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes profilepic {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes main {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+/*
+colors
+green for text #17382d
+light green #b4cea1
+beige almost #dddbc4
+beige orange for gradient #eaaf92
+light red for gradient #d97578
+*/
