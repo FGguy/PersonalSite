@@ -17,7 +17,6 @@ window.addEventListener('scroll', () => {
 
     if (distanceToBottom < threshold) {
     // You've reached the end of the page
-    console.log("End of the page reached!");
     currentSection = sections[sections.length-1].id;
     }
     navbarels.forEach( els => {
